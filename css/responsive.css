@@ -13,5 +13,49 @@
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .top-navigation ul {
+    content-visibility: hidden;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: right;
+  }
+
+  .teammates-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .icon {
+    content-visibility: hidden;
+  }
+  .teammates-list:before,
+  :after {
+    content-visibility: hidden;
+  }
+}
+
+/* Add any common styles for TABLET and MOBILE views here */
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
