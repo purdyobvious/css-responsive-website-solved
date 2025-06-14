@@ -8,12 +8,42 @@
   .top-navigation .trigram {
     display: none;
   }
+  .social-icons > div {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
 
+  .social-icons > div:hover {
+    color: white; /* Make icon and text white on hover */
+  }
+
+  .social-icons i {
+    transition: color 0.3s ease;
+  }
+
+  .social-icons span {
+    transition: color 0.3s ease;
+  }
+  /* .facebook:hover,
+  .twitter:hover,
+  .instagram:hover,
+  .linkedin:hover .icon:hover {
+    color: white;
+    transition: fill 0.3s ease;
+  }
+  .icons:hover {
+    color: white;
+  }
+  body {
+    background-color: aqua;
+  }
+*/
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .portfolio-list {
     flex-wrap: wrap;
     flex-direction: row;
@@ -69,7 +99,7 @@
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
   .teammate-data {
     width: 100%;
     align-items: left;
@@ -87,6 +117,7 @@
     border: 1px solid #ccc;
     padding: 10px;
     flex-direction: row;
+    width: 100%;
   }
   .teammate-list {
     padding: 0;
